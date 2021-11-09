@@ -1,0 +1,13 @@
+.navigation-items.verticle-nav {
+  display: block;
+}
+.navigation-items.verticle-nav > li {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.navigation-items.verticle-nav > li:hover .hover-underline {
+  opacity: 0;
+}

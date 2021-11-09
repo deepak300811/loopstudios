@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark_gray: hsl(0, 0%, 55%);
+  --very_dark_gray: hsl(0, 0%, 41%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1340px;
+  padding: 4rem;
+}
+.margin-auto {
+  margin: auto;
+}
+.pt-2 {
+  padding-top: 4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-heading {
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.more-spacing {
+  letter-spacing: 0.2rem;
+}
+nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+.brand {
+  /* font-family: "Alata", sans-serif; */
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 2;
+  color: var(--white);
 }
 
-.App-link {
-  color: #61dafb;
+.navigation-items {
+  list-style: none;
+  display: flex;
+  color: var(--white);
+}
+.navigation-items > li {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.navigation-items.icon > li {
+  margin-right: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.navigation-items > li > div {
+  position: relative;
+}
+.navigation-items > li > div > i {
+  font-size: 1.5rem;
+}
+.hover-underline {
+  opacity: 0;
+  position: absolute;
+  top: 140%;
+  left: 23%;
+  width: 60%;
+  height: 2px;
+  background: var(--white);
+}
+.navigation-items > li:hover .hover-underline {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1.5rem;
   }
 }

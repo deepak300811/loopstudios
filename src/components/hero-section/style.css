@@ -1,0 +1,40 @@
+.hero-container {
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+
+.intro-text {
+  color: var(--white);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 50%;
+  border: 2px solid var(--white);
+  padding: 2rem;
+  margin-top: 15%;
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  .intro-text {
+    width: 70%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-container {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-text {
+    font-size: 2.5rem;
+
+    width: 100%;
+    margin: 40% auto 0 auto;
+  }
+}

@@ -1,0 +1,105 @@
+.heading-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Alata", sans-serif;
+  margin-bottom: 4rem;
+}
+
+.button-see-all {
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid var(--black);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.button-see-all:hover {
+  background: var(--black);
+  color: var(--white);
+}
+.creations-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.creations-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.creation-item {
+  cursor: pointer;
+  position: relative;
+}
+.creation-item img {
+  width: 100%;
+}
+
+.creation-item .para-container {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.527));
+}
+.creation-item:hover .para-container {
+  transition: background 0.3s;
+  background: rgba(255, 255, 255, 0.753);
+  color: var(--black);
+}
+
+.para-container > p {
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.img-container {
+  width: 100%;
+}
+#see-all {
+  display: none;
+  margin: 2rem auto 0rem auto;
+  width: fit-content;
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  #show-desktop-see-all {
+    display: none;
+  }
+  #see-all {
+    display: block;
+  }
+  .creations-heading,
+  .main-heading {
+    margin: auto;
+    font-size: 2rem;
+  }
+  .creations-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  .para-container > p {
+    font-size: 2rem;
+    width: 65%;
+  }
+  .creation-item .para-container {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}
