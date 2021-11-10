@@ -101,5 +101,6 @@
   .creation-item .para-container {
     padding-left: 1rem;
     padding-bottom: 1rem;
+    bottom: 4px;
   }
 }

@@ -24,6 +24,11 @@ footer {
     text-align: center;
   }
 
+  footer.container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .footer-navigation .navigation-items {
     flex-direction: column;
   }
@@ -36,5 +41,8 @@ footer {
   .socials-copyright div:nth-child(1) {
     width: fit-content;
     margin: 1rem auto 0rem auto;
+  }
+  .footer-container {
+    margin-top: 3rem;
   }
 }

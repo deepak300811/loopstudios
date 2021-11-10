@@ -16,36 +16,34 @@ const Footer = () => (
             <ul className="navigation-items icon" id="nav-socials">
               <li>
                 <div>
-                  <i className="fab fa-facebook-square "></i>
-                  <div className="hover-underline"></div>{" "}
+            <a href="https://www.linkedin.com/in/deepak810kumar/" target="__blank"><i className="fab fa-linkedin"></i></a>      
+                  <div className="hover-underline"></div>
                 </div>
               </li>
               <li>
                 <div>
-                  <i className="fab fa-twitter "></i>
+                <a href="https://www.instagram.com/deepak810k/" target="__blank">        <i className="fab fa-instagram"></i> </a>
 
                   <div className="hover-underline"></div>
                 </div>
               </li>
               <li>
                 <div>
-                  <i className="fab fa-pinterest "></i>
+                <a href="https://twitter.com/deekumar810" target="__blank">     <i className="fab fa-twitter"></i> </a>
 
                   <div className="hover-underline"></div>
                 </div>
               </li>
               <li>
                 <div>
-                  <i className="fab fa-instagram "></i>
+                <a href="https://www.facebook.com/deekumar810" target="__blank">     <i className="fab fa-facebook-square"></i> </a>
                   <div className="hover-underline"></div>
                 </div>
               </li>
             </ul>
           </div>
           <div>
-            <p className="copyright">
-              &copy; 2021 Loopstudios. All rights reserved.{" "}
-            </p>{" "}
+            <p className="copyright">@ Deepak Kumar (deepak300811@gmail.com)</p>{" "}
           </div>
         </section>
       </footer>
